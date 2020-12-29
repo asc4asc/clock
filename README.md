@@ -1,8 +1,6 @@
-# Hallo PWA (Only a copy please use the original !!!)
+# Uhr PWA (Only a copy please use the original !!!)
 
-Das klassische "Hello World" program als "Progressive Web App"
-
-Ich habe meine erste App. hinzugefügt ein einfacher Button der hochzählt...... 
+Uhr als "Progressive Web App"
 
 ## Vom Original:
 
