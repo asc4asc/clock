@@ -38,7 +38,7 @@ button1,button2,button3 {
   border: 2px solid black;
 }
 
-clock {
+clock,clock2 {
   font-size: 20vw;
   color: black;
   padding: 15px;
