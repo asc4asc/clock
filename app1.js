@@ -1,10 +1,11 @@
 "use strict";  
 
+
 (function () {
 	function uhrzeit() {
 		var now = new Date();
 		putclock(now,outhtml1);
-  		putclock(now,outhtml2);
+  		putclock(copy,outhtml2);
 		setTimeout(uhrzeit, 500);
 	}
 
@@ -24,7 +25,8 @@
 	}
 let outhtml1=document.querySelector("clock1");
 let outhtml2=document.querySelector("clock2");
-	
+let copy=new Date();
+    
 document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
