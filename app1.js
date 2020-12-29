@@ -22,13 +22,11 @@
 		zahl = (zahl < 10 ? '0' : '') + zahl;
 		return zahl;
 	}
-let outhtml1=document.querySelector("clock");
+let outhtml1=document.querySelector("clock1");
 let outhtml2=document.querySelector("clock2");
+	
 document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
-
-
-
 
 (function () {
   let i=1;
