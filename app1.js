@@ -6,19 +6,33 @@
 			h = jetzt.getHours(),
 			m = jetzt.getMinutes(),
 			s = jetzt.getSeconds();
+		putclock(jetzt,tmp1);
 		m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
-		tmp1.innerHTML = h + ':' + m + ':' + s;
+		// tmp1.innerHTML = h + ':' + m + ':' + s;
 		setTimeout(uhrzeit, 500);
 	}
 
+	function putclock(date,target) {
+          h = date.getHours();
+	  m = date.getMinutes();
+	  s = date.getSeconds();
+
+	  m = fuehrendeNull(m);
+	  s = fuehrendeNull(s);
+	  target.innerHTML = h + ':' + m + ':' + s;
+	}
+	
 	function fuehrendeNull(zahl) {
 		zahl = (zahl < 10 ? '0' : '') + zahl;
 		return zahl;
 	}
-	let tmp1=document.querySelector("clock");
-	document.addEventListener('DOMContentLoaded', uhrzeit);
+let tmp1=document.querySelector("clock");
+document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
+
+
+
 
 (function () {
   let i=1;
