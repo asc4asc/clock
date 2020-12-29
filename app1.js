@@ -1,8 +1,5 @@
 "use strict";  
 
-let tmp=document.querySelector("body");
-tmp.style.backgroundColor = "blue";
-
 (function () {
 	function uhrzeit() {
 		var jetzt = new Date(),
@@ -23,15 +20,20 @@ tmp.style.backgroundColor = "blue";
 	document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
-let i=1;
-document.body.addEventListener("click", event => {
-  if (i == 1) {
-    tmp.style.backgroundColor = "green"; i=0; 
-  } else {
-    tmp.style.backgroundColor = "yellow"; i=1; 
-    openFullscreen();
-  }
-});
+(function () {
+  let i=1;
+  let tmp=document.querySelector("body");
+  tmp.style.backgroundColor = "blue";
+
+  document.body.addEventListener("click", event => {
+    if (i == 1) {
+      tmp.style.backgroundColor = "green"; i=0; 
+    } else {
+      tmp.style.backgroundColor = "yellow"; i=1; 
+      openFullscreen();
+    }
+  });
+}());
 
 var elem = document.documentElement;
 function openFullscreen() {
