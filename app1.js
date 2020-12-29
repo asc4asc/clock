@@ -14,9 +14,9 @@
 	}
 
 	function putclock(date,target) {
-          h = date.getHours();
-	  m = date.getMinutes();
-	  s = date.getSeconds();
+          let h = date.getHours();
+	  let m = date.getMinutes();
+	  let s = date.getSeconds();
 
 	  m = fuehrendeNull(m);
 	  s = fuehrendeNull(s);
