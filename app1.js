@@ -2,14 +2,9 @@
 
 (function () {
 	function uhrzeit() {
-		var jetzt = new Date(),
-			h = jetzt.getHours(),
-			m = jetzt.getMinutes(),
-			s = jetzt.getSeconds();
-		putclock(jetzt,tmp1);
-		m = fuehrendeNull(m);
-		s = fuehrendeNull(s);
-		// tmp1.innerHTML = h + ':' + m + ':' + s;
+		var now = new Date();
+		putclock(now,outhtml1);
+  		putclock(now,outhtml2);
 		setTimeout(uhrzeit, 500);
 	}
 
@@ -27,7 +22,8 @@
 		zahl = (zahl < 10 ? '0' : '') + zahl;
 		return zahl;
 	}
-let tmp1=document.querySelector("clock");
+let outhtml1=document.querySelector("clock");
+let outhtml2=document.querySelector("clock2");
 document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
