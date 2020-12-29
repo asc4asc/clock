@@ -1,8 +1,6 @@
 "use strict";  
 
 let tmp=document.querySelector("body");
-let tmp1=document.querySelector("clock");
-
 tmp.style.backgroundColor = "blue";
 
 (function () {
@@ -21,6 +19,7 @@ tmp.style.backgroundColor = "blue";
 		zahl = (zahl < 10 ? '0' : '') + zahl;
 		return zahl;
 	}
+	let tmp1=document.querySelector("clock");
 	document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
