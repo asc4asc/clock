@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', uhrzeit);
 
   document.body.addEventListener("click", event => {
     if (i == 1) {
-      tmp.style.backgroundColor = "green"; i=0; 
+      tmp.style.backgroundColor = "green"; i=0; copy=new Date(); 
     } else {
       tmp.style.backgroundColor = "yellow"; i=1; 
       openFullscreen();
@@ -57,3 +57,4 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
 }
+ 
