@@ -1,5 +1,6 @@
 "use strict";  
 
+let copy=new Date();
 
 (function () {
 	function uhrzeit() {
@@ -25,7 +26,6 @@
 	}
 let outhtml1=document.querySelector("clock1");
 let outhtml2=document.querySelector("clock2");
-let copy=new Date();
     
 document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
